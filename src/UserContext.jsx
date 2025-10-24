@@ -63,14 +63,13 @@ export const UserStorage = ({ children }) => {
     }
   }
 
-  async function userLogout() {
+  const userLogout = React.useCallback(async function () {
     setData(null);
     setError(null);
     setLoading(false);
     setLogin(false);
     window.localStorage.removeItem("token");
-    navigate("../login");
-  }
+  }, []);
 
   return (
     <UserContext.Provider
