@@ -52,7 +52,7 @@ export const UserStorage = ({ children }) => {
       if (!tokenRes.ok) throw new Error(`Error: Usuário inválido`);
       const { token } = await tokenRes.json();
       window.localStorage.setItem("token", token);
-      await getUser(token);
+      getUser(token);
       navigate("/conta");
     } catch (err) {
       setError(err.message);
