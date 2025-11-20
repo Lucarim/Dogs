@@ -6,7 +6,6 @@ const Loading = () => {
   React.useEffect(() => {
     function updateStep() {
       setStep((step) => {
-        console.log("aoba");
         if (step < 3) return step + 1;
         else return 0;
       });
