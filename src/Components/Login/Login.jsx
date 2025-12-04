@@ -10,7 +10,7 @@ import NotFound from "../NotFound";
 
 const Login = () => {
   const { login } = useContext(UserContext);
-  if (login === true) return <Navigate to="/conta" />;
+  if (login === true) return <Navigate to="Dogs/conta" />;
   return (
     <section className={styles.login}>
       <div className={styles.forms}>

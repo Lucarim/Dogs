@@ -20,7 +20,7 @@ const UserHeaderNav = () => {
 
   function handleLogout() {
     userLogout();
-    navigate("../login");
+    navigate("../Dogs/login");
   }
   return (
     <>
@@ -40,15 +40,15 @@ const UserHeaderNav = () => {
           mobileMenu && styles.navMobileActive
         }`}
       >
-        <NavLink to="/conta" end>
+        <NavLink to="/Dogs/conta" end>
           <MinhasFotos />
           {mobile && "Minhas Fotos"}
         </NavLink>
-        <NavLink to="/conta/estatisticas">
+        <NavLink to="/Dogs/conta/estatisticas">
           <Estatisticas />
           {mobile && "Estatísticas"}
         </NavLink>
-        <NavLink to="/conta/postar">
+        <NavLink to="/Dogs/conta/postar">
           <AdicionarFoto />
           {mobile && "Adicionar Foto"}
         </NavLink>

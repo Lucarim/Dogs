@@ -52,7 +52,7 @@ export const UserStorage = ({ children }) => {
       const { token } = await tokenRes.json();
       window.localStorage.setItem("token", token);
       getUser(token);
-      navigate("/conta");
+      navigate("/Dogs/conta");
     } catch (err) {
       setError(err.message);
       setLogin(false);
